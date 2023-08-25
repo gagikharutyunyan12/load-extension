@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import './popup.css'
 const App: React.FC<{}> = () => {
   return (
@@ -11,4 +11,4 @@ const App: React.FC<{}> = () => {
 
 const root = document.createElement('div')
 document.body.appendChild(root)
-ReactDOM.render(<App />, root)
+ReactDOM.createRoot(root).render(<App />)
