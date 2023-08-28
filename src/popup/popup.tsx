@@ -10,7 +10,6 @@ const Popup: FC<{}> = () => {
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             const activeTab = tabs[0];
             const url = activeTab.url;
-
             if (url && url.startsWith("https://github.com/")) {
                 setIsDisabled(false);
             }

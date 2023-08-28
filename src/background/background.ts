@@ -1,3 +1,5 @@
+import { scrapDatOne } from "../utils/scrapEmails";
+
 const tabStates = {};
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -21,8 +23,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
             if (state.running) {
                 state.intervalId = setInterval(() => {
-                    console.log("ok", tabId);
-                }, 1000);
+                    scrapDatOne()
+                 }, 1000);
             } else {
                 clearInterval(state.intervalId);
             }

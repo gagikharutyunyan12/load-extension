@@ -23,5 +23,16 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "@types/selenium-webdriver": "^4.1.16",
+    "selenium-webdriver": "^4.11.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
+
+  
 }
