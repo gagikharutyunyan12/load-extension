@@ -3,7 +3,7 @@ import { Options as ChromeOptions } from 'selenium-webdriver/chrome';
 
 export async function scrapDatOne() {
     const options = new ChromeOptions();
-    // options.addArguments('--headless');
+    options.addArguments('--headless');
 
     const driver = await new Builder()
         .withCapabilities(Capabilities.chrome())

@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "@types/selenium-webdriver": "^4.1.16",
-    "selenium-webdriver": "^4.11.1"
+    "axios": "^1.5.0",
+    "selenium-webdriver": "^4.11.1",
+    "webpack-node-externals": "^3.0.0"
   },
   "browser": {
     "fs": false,
     "path": false,
     "os": false
   }
-
-  
 }
